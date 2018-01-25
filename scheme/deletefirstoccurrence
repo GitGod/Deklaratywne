@@ -1,0 +1,5 @@
+(define (delete x list)
+  (cond ((null? list)) 
+        ((eq? x (car list)) (cdr list))
+        ((cons (car list) (delete x (cdr list)))))
+)
