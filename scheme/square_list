@@ -1,0 +1,4 @@
+(define (square xs)
+    (if (null? xs) '()
+        (cons (* (car xs) (car xs)) (square (cdr xs))))
+)
