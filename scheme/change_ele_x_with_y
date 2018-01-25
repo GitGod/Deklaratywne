@@ -1,0 +1,6 @@
+(define (change x y list)
+  (cond ((null? list)'())
+        ((eq? x (car list)) (cons y (change x y (cdr list))))
+        ((cons (car list) (change x y (cdr list))))
+  )
+)
