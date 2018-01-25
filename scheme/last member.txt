@@ -1,0 +1,6 @@
+(define(last list)
+
+	(cond  ((null? (cdr list))(car list))
+      
+	((last (cdr list))))
+)
