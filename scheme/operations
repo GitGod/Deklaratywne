@@ -1,0 +1,4 @@
+(define(kum op w l)
+  (cond ((null? l) w)
+  ((op(car l)(kum op w (cdr l)))))
+ )
