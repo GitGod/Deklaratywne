@@ -1,0 +1,6 @@
+(define (merge l1 l2)
+  (cond ((null? l1) l2)
+        ( (cons(car l1) (merge (cdr l1) l2)))
+      )
+  
+  )
