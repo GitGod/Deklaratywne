@@ -2,3 +2,9 @@
     (if (null? xs) '()
         (cons (* (car xs) (car xs)) (square (cdr xs))))
 )
+
+
+(define (square xs)
+    (cond ((null? xs) '()) 
+        ((cons (* (car xs) (car xs)) (square (cdr xs)))))
+ )
