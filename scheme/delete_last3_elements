@@ -1,0 +1,5 @@
+(define (delete l)
+      (cond ((null? (cdr (cdr (cdr l))))'()) 
+          ((cons(car l) (delete (cdr l)))
+      )
+)
