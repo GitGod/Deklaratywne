@@ -1,0 +1,4 @@
+(define (best a b c)
+  (if (and (> a c) (> b c)) (+ (* b b)(* a a))
+       (if (and (> b a) (> c a)) (+ (* b b)(* c c))
+    (+ (* c c)(* a a)))))
