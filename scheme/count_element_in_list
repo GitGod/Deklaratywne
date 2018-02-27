@@ -1,0 +1,5 @@
+(define (count x l)
+(cond ((null? l) 0)
+      ((eq? (car l) x ) (+ 1 (count x (cdr l))))
+      ((count x (cdr l))
+))
