@@ -1,2 +1,4 @@
+p(X,[X,Z|L],Y,Z).
+p(X,[Y,X|L],Y,Z).
 p(X,[Y,X,Z|L],Y,Z).
 p(X,[A|L],Y,Z):- X \= [B|L],p(X,L,Y,Z).
